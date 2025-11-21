@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Chat</title>
+</head>
+<body>
+    <h3>Edit Message</h3>
+
+    <form action="/chats/<%= chat._id %>" method="POST">
+        <textarea name="msg" required><%= chat.msg %></textarea><br><br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
+
